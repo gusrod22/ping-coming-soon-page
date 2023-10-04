@@ -78,8 +78,8 @@ form {
   margin-top: 35px;
   margin-bottom: 12px;
 }
-.error{
-  font-size: .95rem;
+.error {
+  font-size: 0.95rem;
   color: hsl(354, 100%, 66%);
   font-style: italic;
   margin-top: -10px;
@@ -116,6 +116,7 @@ footer {
   justify-content: center;
   bottom: 20px;
   margin-top: 50px;
+  color: hsl(0, 0%, 59%);
 }
 .socials-container {
   display: flex;
@@ -124,11 +125,45 @@ footer {
   margin-bottom: 15px;
 }
 .social-link {
-  margin: 0 10px;
-  border-style: solid 2px;
-  border-radius: 10px;
+  display: inline-block;
+  width: 40px;
+  margin: 0 6px;
+  border: solid 0.5px hsl(223, 87%, 63%);
+  border-radius: 100px;
   cursor: pointer;
+  padding: 0.2rem;
+}
+i{
+  color: hsl(223, 87%, 63%);
+}
+.social-link:hover {
+  background-color: hsl(223, 87%, 63%);
+}
+.social-link:hover .social-icon{
+  color: white
+}
+.social-icon {
+  font-size: 1rem;
 }
 footer p {
   font-size: 0.7rem;
+}
+
+@media screen and (min-width: 900px) {
+  .submit-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  form {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 15px;
+  }
+  button {
+    margin-bottom: 0;
+    width: 10rem;
+  }
 }
