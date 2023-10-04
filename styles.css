@@ -90,7 +90,7 @@ input {
   border-radius: 20px;
   padding: 10px 10px 10px 30px;
   border-color: hsl(223, 100%, 88%);
-  border-width: 0.5px;
+  border-width: 1px;
   width: 100%;
   font-size: 1rem;
 }
