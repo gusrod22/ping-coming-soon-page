@@ -151,19 +151,26 @@ footer p {
 
 @media screen and (min-width: 900px) {
   .submit-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    position: relative;
     margin-bottom: 50px;
   }
   form {
-    width: 100%;
+    width: 68%;
     margin-top: 0;
     margin-bottom: 0;
     margin-right: 15px;
   }
   button {
+    position: absolute;
+    top: 0;
+    right: 0;
     margin-bottom: 0;
     width: 10rem;
+  }
+  .error{
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-bottom: 0;
+    text-align: left;
   }
 }
